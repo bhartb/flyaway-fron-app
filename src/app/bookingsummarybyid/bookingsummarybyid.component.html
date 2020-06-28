@@ -1,0 +1,30 @@
+<div>
+    <h3>Flight List</h3>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>airlineName</th>
+            <th>email</th>
+            <th>passngrId</th>
+            <th>PassngrName</th>
+            <th>destnPlace</th>
+            <th>sourcePlace</th>
+            <th>price</th>
+        </tr>
+        <tr *ngFor="let bookingsummary of bookingsummary">
+            
+            <td>{{bookingsummary.id}}</td>
+            <td>{{bookingsummary.airlineName}}</td>
+            <td>{{bookingsummary.email}}</td>
+            <td>{{bookingsummary.passngrId}}</td>
+            <td>{{bookingsummary.PassngrName}}</td>
+            <td>{{bookingsummary.destnPlace}}</td>
+            <td>{{bookingsummary.sourcePlace}}</td>
+            <td>{{bookingsummary.price}}</td>
+
+            
+        </tr>
+    </table>
+
+    <button>Booking Confirmed</button>
+    </div>

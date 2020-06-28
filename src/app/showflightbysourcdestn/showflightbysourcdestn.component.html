@@ -1,0 +1,34 @@
+<div>
+    <h3>Flight List</h3>
+
+    <div id="1">
+<table>
+    <tr>
+        <td><input type="text" [(ngModel)]="myInput" placeholder="Enter Source place"></td>
+</tr>
+<tr>
+        <td><input type="text" [(ngModel)]="myInputs" placeholder="Enter destination place"></td>
+</tr>
+</table>
+
+<button (click)="getFlightsBySrcDestn()">Submit</button>
+
+    </div>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>airlineName</th>
+            <th>destnPlace</th>
+            <th>sourcePlace</th>
+            <th>price</th>
+        </tr>
+        <tr *ngFor="let flightlist of flightlist">
+            <td>{{flightlist.id}}</td>
+            <td>{{flightlist.airlineName}}</td>
+            <td>{{flightlist.destnPlace}}</td>
+            <td>{{flightlist.sourcePlace}}</td>
+            <td>{{flightlist.price}}</td>
+        </tr>
+    </table>
+    </div>

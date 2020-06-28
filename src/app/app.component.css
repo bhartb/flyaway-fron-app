@@ -1,0 +1,15 @@
+div{
+  align-content: center;
+}
+.heading{
+  text-decoration: underline;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  display: inline;
+  padding: 25px;
+}
+

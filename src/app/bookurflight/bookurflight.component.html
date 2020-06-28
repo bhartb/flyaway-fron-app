@@ -1,0 +1,25 @@
+<div>
+<h3 style="text-decoration: underline;">Bookurflight</h3>
+<table border="1px">
+
+        <tr>
+                <td><input type="text" [(ngModel)]="flightsearch.sourcePlace" placeholder="Enter Source place"></td>
+        </tr>
+        <tr>
+                <td><input type="text" [(ngModel)]="flightsearch.destnPlace" placeholder="Enter destination place"></td>
+        </tr>
+        <tr>
+                <td><input type="text" [(ngModel)]="flightsearch.dateOfJourney" placeholder="Enter date of journey"></td>
+        </tr>
+        <tr>
+                <td><input type="text" [(ngModel)]="flightsearch.noOfPerson" placeholder="Enter no of person"></td>
+        </tr>
+
+        
+</table>
+
+
+        <button (click)="bookurflight()">Submit</button>
+
+
+</div>
